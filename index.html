@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CHARACTER COUNTER</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="warning" class="alert" style="display: none;"></div>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo6.png" alt="Logo" class="logo-img" />
+            <span>Character Counter</span>
+        </div>
+     <button class="theme-toggle">☀️</button>
+    </div>
+
+    <h1>Analyze your text in real-time.</h1>
+    <textarea id="inputText" placeholder="Start typing here... (or paste your text)"></textarea>
+
+    <div class="options">
+        <label><input type="checkbox" id="excludeSpaces"> Exclude Spaces</label>
+        <label><input type="checkbox" id="setLimit"> Set Character Limit</label>
+        <p id="readTime">Approx. reading time: 0 minute</p>
+    </div>
+    <button id="saveBtn">Save Text</button>
+
+    <div class="stats">
+        <div class="box1">
+            <h2 id="charCount">00</h2>
+            <p>Total Characters</p>
+        </div>
+        <div class="box2">
+            <h2 id="wordCount">00</h2>
+            <p>Word Count</p>
+        </div>
+        <div class="box3">
+            <h2 id="sentenceCount">00</h2>
+            <p>Sentence Count</p>
+        </div>
+    </div>
+
+    <div class="density">
+        <h3>Letter Density</h3>
+        <div id="letterDensity"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
